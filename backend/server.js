@@ -6,9 +6,9 @@ import path from "path";
 import { notFound, errorHandler } from "./middleware/errorMiddleware.js";
 import productRoutes from "./routes/productRoutes.js";
 
-dotenv.config({ path: "../.env" });
+dotenv.config({ path: "./.env" });
 connectDB();
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 8000;
 
 console.log(process.env.PORT, "PORTTT");
 
